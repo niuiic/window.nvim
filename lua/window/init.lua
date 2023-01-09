@@ -14,6 +14,7 @@ local close_float_win = function()
 end
 
 local open_float_win = function()
+	local cur_win_zindex = vim.api.nvim_win_get_config(0).zindex or 0
 	if is_float_win_open() then
 		return
 	end
@@ -24,7 +25,7 @@ local open_float_win = function()
 		width = vim.go.columns,
 		height = vim.go.lines,
 		border = "single",
-		zindex = 1,
+		zindex = cur_win_zindex + 1,
 	})
 end
 

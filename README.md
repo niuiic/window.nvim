@@ -13,6 +13,6 @@
 vim.keymap.set("n", "<space>wm", "<cmd>ToggleMaxWin<CR>", {})
 ```
 
-## Notice
+## Known Issues
 
-Not work if current window is a float window.
+- May not work for some float windows.
