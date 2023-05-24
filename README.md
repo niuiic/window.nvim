@@ -2,16 +2,18 @@
 
 ## Features
 
-- Maximize current window.
-- Does not affect window layout after restoration.
+| function                       | feature                         | description                         |
+| ------------------------------ | ------------------------------- | ----------------------------------- |
+| `require('window').maximize()` | maximize/restore current window | No affect on current window layout. |
 
-<img src="https://github.com/niuiic/assets/blob/main/window.nvim/usage.gif" />
+<details>
+  <summary><b>Maximize window</b></summary>
+  <img src="https://github.com/niuiic/assets/blob/main/window.nvim/usage.gif" />
+</details>
 
-## Keymap
+## Dependencies
 
-```lua
-vim.keymap.set("n", "<space>wm", "<cmd>ToggleMaxWin<CR>", {})
-```
+- [niuiic-core.nvim](https://github.com/niuiic/niuiic-core.nvim)
 
 ## Known Issues
 
