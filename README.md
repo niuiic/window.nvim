@@ -5,6 +5,7 @@
 | function                       | feature                         | description                         |
 | ------------------------------ | ------------------------------- | ----------------------------------- |
 | `require('window').maximize()` | maximize/restore current window | No affect on current window layout. |
+| `require('window').pin()`      | pin current window              | Only work for floating windows.     |
 
 <details>
   <summary><b>Maximize window</b></summary>
