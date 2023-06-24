@@ -15,7 +15,3 @@
 ## Dependencies
 
 - [niuiic-core.nvim](https://github.com/niuiic/niuiic-core.nvim)
-
-## Known Issues
-
-- May not work for some float windows.

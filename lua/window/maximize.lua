@@ -20,6 +20,7 @@ local open_float_win = function()
 
 	local core = require("niuiic-core")
 	local win_config = core.win.proportional_size(1, 1)
+	local prev_zindex = vim.api.nvim_win_get_config(0).zindex or 0
 	local win_handle = core.win.open_float(0, {
 		relative = "editor",
 		row = win_config.row,
@@ -27,7 +28,8 @@ local open_float_win = function()
 		width = win_config.width,
 		height = win_config.height,
 		border = "single",
-		zindex = vim.api.nvim_win_get_config(0).zindex or 1,
+		zindex = prev_zindex + 1,
+		enter = true,
 	})
 	winnr = win_handle.winnr
 end
