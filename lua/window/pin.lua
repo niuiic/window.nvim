@@ -1,5 +1,5 @@
 local pin = function()
-	local core = require("niuiic-core")
+	local core = require("core")
 	local win_config = vim.api.nvim_win_get_config(0)
 	if win_config.relative == "" then
 		vim.notify("Unable to pin non-floating window", vim.log.levels.ERROR)

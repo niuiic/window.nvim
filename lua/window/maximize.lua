@@ -18,7 +18,7 @@ local open_float_win = function()
 		return
 	end
 
-	local core = require("niuiic-core")
+	local core = require("core")
 	local win_config = core.win.proportional_size(1, 1)
 	local prev_zindex = vim.api.nvim_win_get_config(0).zindex or 0
 	local win_handle = core.win.open_float(0, {
