@@ -1,5 +1,7 @@
 # window.nvim
 
+[More neovim plugins](https://github.com/niuiic/awesome-neovim-plugins)
+
 ## Features
 
 | function                       | feature                         | description                         |
